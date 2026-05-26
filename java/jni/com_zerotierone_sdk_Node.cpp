@@ -1431,6 +1431,18 @@ JNIEXPORT void JNICALL Java_com_zerotier_sdk_Node_nativeArpSet(
     (void)env; (void)clazz; (void)ip; (void)mac;
 }
 
+JNIEXPORT void JNICALL Java_com_zerotier_sdk_Node_startNativeTx(
+    JNIEnv *env, jclass clazz, jlong nodeId, jlong nwid, jlong sourceMac, jint localIpv4)
+{
+    (void)env; (void)clazz; (void)nodeId; (void)nwid; (void)sourceMac; (void)localIpv4;
+}
+
+JNIEXPORT void JNICALL Java_com_zerotier_sdk_Node_stopNativeTx(
+    JNIEnv *env, jclass clazz)
+{
+    (void)env; (void)clazz;
+}
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

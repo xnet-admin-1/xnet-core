@@ -2170,9 +2170,9 @@ int main(int argc,char **argv)
 #endif
 #endif // __WINDOWS__
 
-	if ((strstr(argv[0],"zerotier-idtool"))||(strstr(argv[0],"ZEROTIER-IDTOOL")))
+	if ((strstr(argv[0],"zerotier-idtool"))||(strstr(argv[0],"ZEROTIER-IDTOOL"))||(strstr(argv[0],"xnet-idtool")))
 		return idtool(argc,argv);
-	if ((strstr(argv[0],"zerotier-cli"))||(strstr(argv[0],"ZEROTIER-CLI")))
+	if ((strstr(argv[0],"zerotier-cli"))||(strstr(argv[0],"ZEROTIER-CLI"))||(strstr(argv[0],"xnet-cli")))
 		return cli(argc,argv);
 
 	std::string homeDir;
